@@ -3,7 +3,6 @@ body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	width:940px;
 	margin:0 auto;
-	background-color:red;
 }
 
 h1{
@@ -33,3 +32,27 @@ figcaption{
 	font-style:italic;
 	margin-top:10px;
 }
+
+footer{
+	color:#777;
+	margin: 30px 0;
+	padding: 30px 0;
+}
+
+footer img{
+	margin-right: 30px;
+	vertical-align: middle;
+	width:500px
+}
+
+#centro-distribuicao{
+	margin-left: auto;
+	margin-right: auto;
+	width:550px;
+}
+
+#familia-pelho{
+	float: right;
+	margin: 0 0 10px 10px;
+}
+

@@ -29,7 +29,7 @@
 
 	<h2 id="historia">História</h2>
 
-	<figure id="familia-pelho">
+	<figure>
 		<img src="img/familia-pelho.jpg" alt="Família Pelho">
 		<figcaption>Família Pelho</figcaption>
 	</figure>
