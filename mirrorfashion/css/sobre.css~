@@ -5,7 +5,7 @@ body{
 	margin:0 auto;
 }
 
-h1{
+cab-topo{
 	background-image: url(../img/sobre-background.jpg);
 	padding: 10px;
 }
@@ -42,7 +42,7 @@ footer{
 footer img{
 	margin-right: 30px;
 	vertical-align: middle;
-	width:500px
+	width:94px
 }
 
 #centro-distribuicao{
