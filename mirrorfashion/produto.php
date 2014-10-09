@@ -1,5 +1,11 @@
+<?php
+	$conexao = mysqli_connect("localhost", "root", "", "WD43");
+	$dados = mysqli_query($conexao, "select * from produtos where id=$_GET[id]");
+	$produto = mysqli_fetch_array($dados);
+?>
+
 <?php 
-	$cabecalho_title = "Produto MF";
+	$cabecalho_title = $produto["nome"];
 	$cabecalho_css = '<link rel="stylesheet" href="css/produto.css"';
 	include("cabecalho.php");
 ?>
@@ -7,25 +13,26 @@
 <div class="produto-back">
 	<div class="container">
 		<div class="produto">
-			<h1>Fuzzy Cardigan</h1>
-			<p>por apenas R$ 129,00</p>
-			<form>
+			<h1><?=$produto["nome"]?></h1>
+			<p>por apenas R$ <?=$produto["preco"]?></p>
+			<form action="checkout.php" method="POST">
+				<input type="hidden" name="id" value="<?=$produto["id"]?>">
 				<fieldset class="cores">
 					<legend>Escolha a cor:</legend>
 			
 					<input type="radio" name="cor" value="verde" id="verde" checked>
 					<label for="verde">
-						<img src="img/produtos/foto2-verde.png" alt="verde">
+						<img src="img/produtos/foto<?=$produto["id"]?>-verde.png" alt="verde">
 					</label>
 			
 					<input type="radio" name="cor" value="rosa" id="rosa">
 					<label for="rosa">
-						<img src="img/produtos/foto2-rosa.png" alt="rosa">
+						<img src="img/produtos/foto<?=$produto["id"]?>-rosa.png" alt="rosa">
 					</label>
 			
 					<input type="radio" name="cor" value="azul" id="azul">
 					<label for="azul">
-						<img src="img/produtos/foto2-azul.png" alt="azul">
+						<img src="img/produtos/foto<?=$produto["id"]?>-azul.png" alt="azul">
 					</label>
 				</fieldset>
 			
