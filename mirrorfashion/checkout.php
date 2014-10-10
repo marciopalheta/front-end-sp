@@ -9,10 +9,37 @@
 	<title>Checkout Mirror Fashion</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-flatly.css">
 	<link rel="stylesheet" href="css/checkout.css">
+	<style>
+		.navbar {
+			margin: 0;
+		}
+		.navbar .glyphicon {
+		  color: yellow;
+		}
+		body{
+			padding-top:70px;
+		}
+	</style>
 </head>
 <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.php">Mirror Fashion</a>
+			<button class="navbar-toggle" type="button"
+				data-target=".navbar-collapse" data-toggle="collapse">
+			   <span class="glyphicon glyphicon-align-justify">
+			</button>
+		</div>
+		<ul class="nav navbar-nav collapse navbar-collapse">
+			<li><a href="sobre.php"> Sobre</a></li>
+			<li><a href="#">Ajuda</a></li>
+			<li><a href="#">Perguntas frequentes</a></li>
+			<li><a href="#">Entre em contato</a></li>
+		</ul>
+	</nav>
+
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Ótima escolha</h1>
@@ -69,7 +96,10 @@
 
 			  <div class="form-group">
 				<label for="cpf">CPF</label>
-				<input type="text" required class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
+				<input type="text" required 
+					class="form-control" id="cpf" name="cpf" 
+					placeholder="000.000.000-00"
+					data-mask="999.999.999-99">
 			  </div>
 
 			  <div class="checkbox">
@@ -85,7 +115,8 @@
 			  <div class="form-group">
 				<label for="numero-cartao">Número - CVV</label>
 				<input type="text" class="form-control" 
-					   id="numero-cartao" name="numero-cartao">
+					   id="numero-cartao" name="numero-cartao"
+					   data-mask="9999 9999 9999 9999 - 999">
 			  </div>
 
 			  <div class="form-group">
@@ -112,6 +143,9 @@
 		</form>
 	</div>
 	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/inputmask-plugin.js"></script>
 	<script src="js/checkout.js"></script>
 </body>
 </html>

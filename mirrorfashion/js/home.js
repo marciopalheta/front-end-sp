@@ -34,3 +34,14 @@ controle.onclick = function(){
 	}
 	return false;
 };
+
+// Inclusao do JQuery
+$('.painel').addClass('painel-compacto');
+
+$('.novidades button').click(function() {
+	$('.novidades').removeClass('painel-compacto');
+});
+
+$('.mais-vendidos button').click(function() {
+	$('.mais-vendidos').removeClass('painel-compacto');
+});

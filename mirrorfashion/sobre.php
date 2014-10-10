@@ -4,6 +4,13 @@
 	include("cabecalho.php")
 ?>
 <h1 class="cab-topo">A Mirror Fashion</h1>
+<iframe width="420" height="315" src="//www.youtube.com/embed/Tb06abHE4hY" 
+frameborder="0" allowfullscreen></iframe>
+
+<iframe width="425" height="350" frameborder="0" 
+scrolling="no" marginheight="0" marginwidth="0" 
+src="http://maps.google.com.br/maps?q=Jacarezinho&amp;output=embed"></iframe>
+
 
 <p>A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
 Fundada há <?php print date("Y") - 1932; ?>, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
@@ -61,4 +68,6 @@ Fashion, além de presidentes da União Européia, Ásia e o secretário-geral d
 </ul>
 
 <div>
+
+
 <?php include("rodape.php")?>
